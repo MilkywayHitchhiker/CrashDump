@@ -1,23 +1,8 @@
-#include <windows.h>
-#include <tchar.h>
-#include <locale.h>
-#include <process.h>
-#include <Strsafe.h>
-#include <time.h>
-#include <psapi.h>
-#include <dbghelp.h>
-#include <crtdbg.h>
-#include <StrSafe.h>
-#include <tlhelp32.h>
+#include"stdafx.h"
+#include "CrashDump.h"
 
-#pragma comment(lib, "DbgHelp.Lib")
-#pragma comment(lib, "ImageHlp")
-#pragma comment(lib, "psapi")
 
-#include "APIHook.h"
-
-#define chINRANGE(low, Num, High) (((low) <= (Num)) && ((Num) <= (High)))
-
+long CCrashDump::_DumpCount;
 
 
 // The head of the linked-list of CAPIHook objects

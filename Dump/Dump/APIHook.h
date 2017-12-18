@@ -1,6 +1,8 @@
 #pragma once
 
 
+#define chINRANGE(low, Num, High) (((low) <= (Num)) && ((Num) <= (High)))
+
 class CToolhelp 
 {
 private:
