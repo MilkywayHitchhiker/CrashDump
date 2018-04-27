@@ -1,6 +1,6 @@
 #pragma once
 
-//상단에 APIHOOK에 대한 Header를 붙여넣어놨음.
+
 //#ifndef __CCrashDump_LIB__ 부터가 Dump lib 시작.
 #include <windows.h>
 #include <tchar.h>
@@ -348,7 +348,7 @@ private:
 
 
 
-
+//상단에 APIHOOK에 대한 Header를 붙여넣어놨음.
 #ifndef __CCrashDump_LIB__
 #define __CCrashDump_LIB__
 
